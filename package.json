@@ -1,5 +1,5 @@
 {
-  "name": "@upsided/utility",
+  "name": "@upsided/utilities",
   "version": "1.0.0",
   "description": "Utilities and functions for Upsided",
   "main": "index.js",
@@ -29,5 +29,13 @@
     "@types/node": "^17.0.18"
   },
   "homepage": "https://github.com/Upsidedly/upsided-utility#README.md",
-  "repository": "https://github.com/Upsidedly/upsided-utility"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Upsidedly/upsided-utility.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Upsidedly/upsided-utility/issues"
+  },
+  "devDependencies": {},
+  "license": "ISC"
 }
