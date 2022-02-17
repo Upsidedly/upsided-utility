@@ -1,13 +1,10 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url)
-
 export const string = {
     /**
     * A capitalization function, due to JavaScript's lack of one.
     * @param {string} input 
     * @returns {string} The capitalized string, if capitalized.
     */
-    toTitleCase: require('./functions/cap.js').default,
+    toTitleCase: (await import('./functions/cap.js')).default,
     /**
      * Reverses a string (Emoji support)
      * @param {string} str
