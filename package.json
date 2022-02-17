@@ -1,6 +1,6 @@
 {
   "name": "@upsided/utility",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Utilities and functions for Upsided",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "convenient",
     "upsided"
   ],
-  "licenses" : [
+  "licenses": [
     {
       "type": "MIT",
       "url": "https://www.opensource.org/licenses/mit-license.php"
