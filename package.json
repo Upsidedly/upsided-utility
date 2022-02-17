@@ -1,0 +1,30 @@
+{
+  "name": "@upsided/utility",
+  "version": "1.0.2",
+  "description": "Utilities and functions for Upsided",
+  "main": "index.js",
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
+  "author": "Upsided",
+  "keywords": [
+    "functions",
+    "utility",
+    "convenient",
+    "upsided"
+  ],
+  "licenses" : [
+    {
+      "type": "MIT",
+      "url": "https://www.opensource.org/licenses/mit-license.php"
+    },
+    {
+      "type": "Apache-2.0",
+      "url": "https://opensource.org/licenses/apache2.0.php"
+    }
+  ],
+  "type": "module",
+  "dependencies": {
+    "@types/node": "^17.0.18"
+  }
+}
