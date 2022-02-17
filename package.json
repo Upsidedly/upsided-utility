@@ -1,10 +1,10 @@
 {
   "name": "@upsided/utilities",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Utilities and functions for Upsided",
   "main": "index.js",
   "scripts": {
-    "publish": "npm publish --access public",
+    "pub": "npm publish --access public",
     "test": "echo \"test swag\""
   },
   "author": "Upsided",

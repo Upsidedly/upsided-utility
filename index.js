@@ -16,3 +16,22 @@ export const array = {
      */
     unique = (arr) => [...new Set(arr)]
 }
+
+export const number = {
+    /**
+     * Checks if a number is even.
+     * @param {number} num
+     * The number to check if even
+     * @returns {boolean}
+     * If the number is even or not
+     */
+    isEven: num => num % 2 === 0,
+    /**
+     * Returns the average of an array of numbers (parameters)
+     * @param {number[]} numbers
+     * The numbers to retrieve the average of
+     * @returns {number}
+     * The average of the numbers
+     */
+    average: (numbers) => numbers.reduce((a, b) => a + b) / numbers.length
+}
