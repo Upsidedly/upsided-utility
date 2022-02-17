@@ -26,5 +26,7 @@
   "type": "module",
   "dependencies": {
     "@types/node": "^17.0.18"
-  }
+  },
+  "homepage": "https://github.com/Upsidedly/upsided-utility#README.md",
+  "repository": "https://github.com/Upsidedly/upsided-utility"
 }
