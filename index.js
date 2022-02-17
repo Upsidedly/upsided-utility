@@ -33,5 +33,13 @@ export const number = {
      * @returns {number}
      * The average of the numbers
      */
-    average: (numbers) => numbers.reduce((a, b) => a + b) / numbers.length
+    average: (numbers) => numbers.reduce((a, b) => a + b) / numbers.length,
+    /**
+     * Reverses a string (Emoji support)
+     * @param {string} str
+     * The string to reverse
+     * @returns {string}
+     * The reversed string
+     */
+    reverse: str => Array.from(str.normalize('NFC')).reverse().join('')
 }
