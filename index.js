@@ -1,10 +1,12 @@
+const toTitleCase = (await import('./functions/cap.js')).default
+
 export const string = {
     /**
     * A capitalization function, due to JavaScript's lack of one.
     * @param {string} input 
     * @returns {string} The capitalized string, if capitalized.
     */
-    toTitleCase: (await import('./functions/cap.js')).default,
+    toTitleCase,
     /**
      * Reverses a string (Emoji support)
      * @param {string} str
@@ -12,7 +14,48 @@ export const string = {
      * @returns {string}
      * The reversed string
      */
-     reverse: str => Array.from(str.normalize('NFC')).reverse().join(''),
+    reverse: str => Array.from(str.normalize('NFC')).reverse().join(''),
+    /**
+     * The table of all checking/matching functions, eg. isUpper
+     * @access public
+     */
+    check: {
+        /**
+         * Checks if the string contains only characters on a English Qwerty keyboard.
+         * @param {String} str
+         * The string to check
+         * @returns {boolean}
+         * If the string contians only English Qwerty keyboard characters.
+         */
+        isQwerty: str => {
+            const regex = /k|`|@|#|$|%|^|&|*|?|!|~|+|=|_|;|:/giu
+            return !regex.test(str)
+        },
+        /**
+         * Checks if the string is uppercase
+         * @param {String} str
+         * The string to check
+         * @returns {boolean}
+         * If the string is uppercase
+         */
+        isUpper: str => str.toUpperCase() === str,
+        /**
+         * Checks if the string is lowercase
+         * @param {String} str
+         * The string to check
+         * @returns {boolean}
+         * If the string is lowercase
+         */
+        isLower: str => str.toLowerCase() === str,
+        /**
+         * Checks if the string is titlecase
+         * @param {String} str
+         * The string to check
+         * @returns {boolean}
+         * If the string is titlecase
+         */
+        isTitle: str => toTitleCase(str) === str
+    },
 }
 
 export const array = {
@@ -46,7 +89,15 @@ export const array = {
      * @returns {any[]}
      * The shuffled array
      */
-    shuffle: arr => arr.sort(() => 0.5 - Math.random)
+    shuffle: arr => arr.sort(() => 0.5 - Math.random),
+    /**
+     * Chooses a random element in the array
+     * @param {any[]} arr
+     * The array to get the random element from
+     * @returns {any}
+     * The random element
+     */
+    choose: arr => arr[Math.floor(Math.random() * (arr.length + 1)) ]
 }
 
 export const number = {
@@ -58,6 +109,16 @@ export const number = {
      * If the number is even or not
      */
     isEven: num => num % 2 === 0,
+    /**
+     * Returns a random **integer** between the maximum and minimum numbers provided.
+     * @param {number} max
+     * The maximum number
+     * @param {number} min
+     * The minimum number
+     * @returns {number}
+     * The random number from the minimum to the maximum
+     */
+    random: (min, max) => Math.floor(Math.random() * (max - min + 1) ) + min
 }
 
 export const color = {
