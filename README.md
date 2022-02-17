@@ -8,3 +8,7 @@ Functions and stuff to make my life easier
 - [isEven](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)
 - [average](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)
 - [reverse](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)
+- [isEmpty](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)
+- [shuffle](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)
+- [hex](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)
+- [randomHex](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)

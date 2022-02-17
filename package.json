@@ -1,6 +1,6 @@
 {
   "name": "@upsided/utilities",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utilities and functions for Upsided",
   "main": "index.js",
   "scripts": {
