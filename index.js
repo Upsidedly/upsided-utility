@@ -1,3 +1,5 @@
+import { readFile } from 'fs/promises'
+
 const toTitleCase = (await import('./functions/cap.js')).default
 
 export const string = {
@@ -137,4 +139,14 @@ export const color = {
      * The hex code string
      */
     randomHex: () => `#${Math.random().toString(16).slice(2, 8)}`
+}
+
+export const object = {
+    /**
+     * Requires a JSON.
+     * @param {string} path
+     * The path of the JSON file.
+     * @returns JSON or provides error
+     */
+    parseJson: async (path) => JSON.parse(await readFile(path, 'utf8'))
 }

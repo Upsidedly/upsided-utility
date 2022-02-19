@@ -34,3 +34,8 @@ Functions and stuff to make my life easier
 ### color
 - [hex](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)
 - [randomHex](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)
+
+---
+
+### object
+- [parseJson](https://github.com/Upsidedly/upsided-utility/blob/master/index.js)
